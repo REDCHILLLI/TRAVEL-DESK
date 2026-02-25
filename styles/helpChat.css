@@ -1,0 +1,106 @@
+.help-chat {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.help-chat h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.new-complaint {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.new-complaint textarea {
+  resize: none;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  min-height: 100px;
+  margin-bottom: 10px;
+  transition: border 0.3s;
+}
+
+.new-complaint textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.new-complaint button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.new-complaint button:hover {
+  background-color: #0056b3;
+}
+
+.complaints-list h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.complaint-item {
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
+  position: relative;
+}
+
+.complaint-item p {
+  margin: 5px 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.complaint-item p strong {
+  color: #007bff;
+}
+
+.complaint-item hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.alert {
+  text-align: center;
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .help-chat {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .new-complaint button {
+    width: 100%;
+  }
+}

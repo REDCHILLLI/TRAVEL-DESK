@@ -1,0 +1,50 @@
+/* 404 Not Found Page - A3 Holidays Theme */
+
+.not-found {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f); /* peach-coral gradient */
+}
+
+.not-found-content {
+    text-align: center;
+    padding: 30px 20px;
+    color: #4a148c; /* deep purple */
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.not-found-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #d84315; /* coral */
+}
+
+.not-found-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #3e2723;
+}
+
+.not-found-content button {
+    background: #d84315; /* coral */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.not-found-content button:hover {
+    background: #4a148c; /* deep purple hover */
+    transform: scale(1.05);
+}

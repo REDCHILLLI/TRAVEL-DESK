@@ -1,0 +1,30 @@
+/* Pagination - A3 Holidays Theme */
+
+.pagination span {
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d84315; /* coral border */
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #4a148c; /* deep purple text */
+    transition: all 0.3s ease;
+    background-color: #fff3e0; /* soft peach background */
+}
+
+.pagination span:hover {
+    background-color: #d84315; /* coral hover */
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.active__page {
+    background: #d84315; /* coral active */
+    color: #fff !important;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}

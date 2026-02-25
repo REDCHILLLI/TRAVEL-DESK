@@ -1,0 +1,19 @@
+/* Thank You Page - A3 Holidays Theme */
+
+.thank__you span i {
+    color: #d84315; /* coral */
+    font-size: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.thank__you span i:hover {
+    transform: scale(1.2);
+    color: #4a148c; /* deep purple on hover */
+}
+
+.thank__you h1 {
+    font-size: 3.6rem;
+    font-family: 'Poppins', sans-serif;
+    color: #4a148c; /* deep purple heading */
+    margin-top: 1rem;
+}

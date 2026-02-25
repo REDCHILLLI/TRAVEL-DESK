@@ -1,0 +1,87 @@
+/* FAQ Section - A3 Holidays Theme */
+
+.faq__wrapper {
+    margin-top: 2rem;
+}
+
+.faq__item {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff3e0; /* soft peach background */
+    border-radius: 1rem;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq__item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq__question {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.faq__question span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #4a148c; /* deep purple */
+    align-items: center;
+}
+
+.faq__question svg {
+    font-size: 24px;
+    color: #d84315; /* coral icon */
+    transition: transform 0.3s ease;
+}
+
+.faq__question svg:hover {
+    transform: rotate(90deg);
+}
+
+.faq__item h4 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #4a148c; /* deep purple heading */
+}
+
+.faq__item p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #3e2723; /* text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .faq__item h4 {
+        font-size: 1.3rem;
+    }
+
+    .faq__item p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .faq__item h4 {
+        font-size: 1.1rem;
+    }
+
+    .faq__item p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .faq__item h4 {
+        font-size: 1rem;
+    }
+
+    .faq__item p {
+        font-size: 0.95rem;
+    }
+}

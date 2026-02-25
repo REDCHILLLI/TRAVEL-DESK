@@ -1,0 +1,256 @@
+/* ---------- Admin Dashboard Overall ---------- */
+.admin-dashboard {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f7fc;
+  min-height: 100vh;
+  padding: 2rem 4rem;
+  color: #333;
+}
+
+.admin-dashboard h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #1f3c88;
+  margin-bottom: 2rem;
+}
+
+/* ---------- Controls ---------- */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.controls select,
+.controls button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls select {
+  flex: 1;
+}
+
+.controls button {
+  background: #1f3c88;
+  color: #fff;
+  border: none;
+}
+
+.controls button:hover {
+  background: #0f2366;
+}
+
+/* ---------- Form Section ---------- */
+.form-section {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+.form-section h3 {
+  margin-bottom: 1rem;
+  color: #1f3c88;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: 0.2s;
+}
+
+.form-section input:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31,60,136,0.2);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.form-buttons button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-buttons button:nth-child(1) {
+  background: #28a745;
+  color: #fff;
+}
+
+.form-buttons button:nth-child(1):hover {
+  background: #1e7e34;
+}
+
+.form-buttons button:nth-child(2) {
+  background: #ffc107;
+  color: #212529;
+}
+
+.form-buttons button:nth-child(2):hover {
+  background: #e0a800;
+}
+
+.form-buttons button:nth-child(3) {
+  background: #dc3545;
+  color: #fff;
+}
+
+.form-buttons button:nth-child(3):hover {
+  background: #bd2130;
+}
+
+/* ---------- Data Table ---------- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.8rem 1rem;
+  text-align: left;
+}
+
+.data-table thead {
+  background: #1f3c88;
+  color: #fff;
+  font-weight: 600;
+}
+
+.data-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.data-table tbody tr:hover {
+  background: #f0f4ff;
+}
+
+/* ---------- Complaints Wrapper ---------- */
+.complaints-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.complaint-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.complaint-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.complaint-card h4 {
+  margin: 0 0 0.5rem 0;
+  color: #1f3c88;
+}
+
+.complaint-card p {
+  margin: 0.2rem 0 1rem 0;
+  font-weight: 500;
+}
+
+.complaint-messages {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.user-msg, .admin-msg {
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  max-width: 80%;
+  word-break: break-word;
+  position: relative;
+}
+
+.user-msg {
+  background: #f1f3f6;
+  align-self: flex-start;
+}
+
+.admin-msg {
+  background: #d1e7ff;
+  align-self: flex-end;
+}
+
+.msg-time {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.reply-section {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reply-section input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.reply-section button {
+  background: #1f3c88;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reply-section button:hover {
+  background: #0f2366;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .admin-dashboard {
+    padding: 1rem 2rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}

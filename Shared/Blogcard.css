@@ -1,0 +1,134 @@
+/* Blog / Card Section - A3 Holidays Theme */
+
+.title {
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    color: #4a148c; /* deep purple heading */
+}
+
+.blog__img img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.blog__img img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.card {
+    border: none !important;
+    border-radius: 1rem;
+    box-shadow: rgba(220, 178, 178, 0.2) 0px 18px 50px -10px;
+    overflow: hidden;
+}
+
+.blog__img {
+    position: relative;
+}
+
+.blog__img span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #d84315; /* coral */
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px 0 0 0;
+    z-index: 10;
+    font-size: 0.85rem;
+}
+
+.card__top span i {
+    color: #d84315; /* coral icons */
+}
+
+.blog__rating {
+    font-size: 0.8rem;
+    color: #3e2723;
+}
+
+.blog__rating span {
+    color: #3e2723;
+}
+
+.blog__location {
+    color: #4a148c; /* deep purple */
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.blog__rating i:nth-child(1) {
+    font-size: 1rem;
+    color: #d84315; /* coral */
+}
+
+.blog__title {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: #4a148c;
+    transition: color 0.3s ease;
+}
+
+.blog__title a {
+    text-decoration: none;
+    color: #4a148c;
+}
+
+.blog__title a:hover {
+    color: #d84315; /* coral hover */
+}
+
+.card__bottom h5 {
+    font-size: 1rem;
+    color: #d84315;
+    font-weight: 700;
+}
+
+.card__bottom h5 span {
+    font-size: 0.85rem;
+    color: #3e2723;
+    font-weight: 500;
+}
+
+.booking__btn {
+    background: #d84315 !important;
+    cursor: pointer;
+    padding: 0.3rem 0.7rem !important;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.booking__btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+}
+
+.booking__btn:hover {
+    background: #4a148c !important; /* deep purple hover */
+    transform: scale(1.05);
+    color: #fff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px) {
+    .blog__title {
+        font-size: 0.8rem;
+    }
+
+    .booking__btn a {
+        font-size: 0.8rem;
+    }
+
+    .booking__btn {
+        padding: 0.2rem 0.5rem !important;
+    }
+
+    .blog__location, .blog__rating {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,132 @@
+/* Tour Cards - A3 Holidays Theme */
+
+.tour__img img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: transform 0.3s ease;
+}
+
+.tour__img img:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    border: none !important;
+    box-shadow: rgba(216, 112, 95, 0.2) 0px 12px 35px -10px; /* warm coral shadow */
+    border-radius: 0.8rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(216, 112, 95, 0.3) 0px 15px 40px -5px;
+}
+
+.tour__img {
+    position: relative;
+}
+
+.tour__img span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #d84315; /* coral badge */
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px 0 0 0;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.card__top span i {
+    color: #4a148c; /* deep purple icons */
+}
+
+.tour__rating {
+    font-size: 0.9rem;
+    color: #4a148c; /* deep purple text */
+}
+
+.tour__rating span {
+    color: #4a148c;
+}
+
+.tour__location {
+    color: #4a148c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.tour__rating i:nth-child(1) {
+    font-size: 1rem;
+    color: #d84315; /* coral star */
+}
+
+.tour__title {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4a148c;
+}
+
+.tour__title a {
+    text-decoration: none;
+    color: #4a148c;
+}
+
+.tour__title a:hover {
+    color: #d84315;
+}
+
+.card__bottom h5 {
+    font-size: 1.1rem;
+    color: #d84315; /* coral highlight */
+    font-weight: 700;
+}
+
+.card__bottom h5 span {
+    font-size: 0.85rem;
+    color: #4a148c;
+    font-weight: 500;
+}
+
+.booking__btn {
+    background: #d84315 !important;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem !important;
+    border-radius: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.booking__btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.booking__btn:hover {
+    background: #4a148c !important;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media only screen and (max-width: 576px) {
+    .tour__title {
+        font-size: 1rem;
+    }
+
+    .booking__btn a {
+        font-size: 0.8rem;
+    }
+
+    .booking__btn {
+        padding: 0.3rem 0.6rem !important;
+    }
+
+    .tour__location, .tour__rating {
+        font-size: 0.95rem;
+    }
+}

@@ -1,0 +1,108 @@
+/* Search Bar - A3 Holidays Theme */
+
+.search__bar {
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 10px 25px 0px;
+    width: max-content;
+    margin-top: 50px;
+    background: #fff8f0; /* soft peach background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__group span {
+    font-size: 1.8rem;
+    color: #d84315; /* coral accent */
+}
+
+.form__group input {
+    border: none;
+    font-size: 0.95rem;
+    color: #4a148c; /* deep purple */
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form__group input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #d84315; /* coral focus ring */
+}
+
+.form__group h6 {
+    margin-bottom: 0;
+    color: #4a148c;
+}
+
+.form__group-fast {
+    border-right: 2px solid #ffb997; /* soft peach separator */
+}
+
+.search__icon i {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    color: #fff;
+    background: #d84315; /* coral button */
+    border-radius: 10px 5px 10px 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search__icon i:hover {
+    background: #4a148c; /* deep purple hover */
+    transform: scale(1.1);
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: #4a148c;
+}
+
+/* Responsive */
+@media only screen and (max-width: 992px) {
+    .search__bar {
+        width: 100%;
+        border-radius: 2rem;
+        padding-top: 2rem;
+    }
+
+    .search__bar form {
+        flex-wrap: wrap;
+    }
+
+    .search__bar form .form__group {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .search__bar {
+        width: 100%;
+    }
+
+    .search__bar form {
+        flex-wrap: wrap;
+    }
+
+    .search__bar form .form__group {
+        width: 100%;
+    }
+
+    .form__group input {
+        font-size: 0.8rem;
+    }
+
+    .form__group span {
+        font-size: 1.3rem;
+    }
+
+    .form__group h6 {
+        font-size: 1rem;
+    }
+}

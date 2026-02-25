@@ -1,0 +1,97 @@
+/* Complaint Cards Container */
+.complaints-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Individual Complaint Card */
+.complaint-card {
+  background-color: #f9fafb;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-height: 400px;
+}
+
+/* Card Header */
+.complaint-card h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+/* Messages container (scrollable) */
+.complaint-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* User Message */
+.complaint-messages .user-msg {
+  background-color: #e0f2fe;
+  color: #0c4a6e;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px 15px 15px 0;
+  margin-bottom: 0.5rem;
+  max-width: 80%;
+  align-self: flex-start;
+}
+
+/* Admin Message */
+.complaint-messages .admin-msg {
+  background-color: #fce7f3;
+  color: #9d174d;
+  padding: 0.5rem 0.75rem;
+  border-radius: 15px 15px 0 15px;
+  margin-bottom: 0.5rem;
+  max-width: 80%;
+  align-self: flex-end;
+}
+
+/* Timestamp */
+.complaint-messages .msg-time {
+  font-size: 0.7rem;
+  color: #6b7280;
+  margin-top: 0.1rem;
+}
+
+/* Reply Section */
+.reply-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.reply-section input {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  outline: none;
+}
+
+.reply-section input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.reply-section button {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.reply-section button:hover {
+  background-color: #4f46e5;
+}

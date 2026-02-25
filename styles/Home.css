@@ -1,0 +1,176 @@
+/* Hero Section */
+.hero__subtitle img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.hero__content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 1.2rem 0;
+    color: #4a148c; /* deep purple */
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero__content h1 .highlight {
+    color: #d84315; /* coral accent */
+}
+
+.hero__content p {
+    font-size: 1.05rem;
+    color: #3e2723;
+    line-height: 2rem;
+}
+
+.hero__img-box img,
+.hero__img-box video {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 3px solid #d84315;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero__img-box img:hover,
+.hero__img-box video:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.hero__content,
+.hero__img-box {
+    padding-top: 2.5rem;
+}
+
+/* Services Section */
+.services__subtitle {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #d84315; /* coral accent */
+    font-family: 'Poppins', sans-serif;
+}
+
+.services__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #4a148c;
+}
+
+/* Featured Tours */
+.featured__tour-title {
+    font-size: 2.7rem;
+    font-weight: 700;
+    color: #4a148c;
+}
+
+/* Experience Section */
+.experience__content h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #4a148c;
+}
+
+.experience__content p {
+    font-size: 1rem;
+    color: #3e2723;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.experience__img img {
+    width: 90%;
+    border-radius: 1rem;
+}
+
+/* Counter */
+.counter__wrapper {
+    margin-top: 2rem;
+}
+
+.counter__box span {
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d84315; /* coral */
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.counter__box h6 {
+    font-size: 1.1rem;
+    color: #3e2723;
+    margin-top: 1rem;
+}
+
+/* Gallery */
+.gallery__title {
+    font-size: 2.5rem;
+    margin: 1rem 0 2.5rem;
+    color: #4a148c;
+}
+
+.masonry__img {
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.masonry__img:hover {
+    transform: scale(1.1);
+}
+
+/* Testimonials */
+.testimonials__title {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #4a148c;
+}
+
+/* Responsive */
+@media only screen and (max-width: 992px) {
+    .hero__content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero__img-box {
+        display: none;
+    }
+
+    .video-box {
+        display: block;
+    }
+
+    .services__title, .featured__tour-title, .gallery__title, .testimonials__title,
+    .experience__content h2 {
+        font-size: 2rem;
+    }
+
+    .experience__img {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero__content {
+        padding-top: 0.5rem;
+    }
+
+    .hero__content h1 {
+        font-size: 1.8rem;
+    }
+
+    .services__title, .featured__tour-title, .gallery__title, .testimonials__title,
+    .experience__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .counter__box h6 {
+        font-size: 0.75rem;
+    }
+}
